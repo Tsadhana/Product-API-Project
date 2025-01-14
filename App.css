@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  font-family: varela round;
+  font-size: medium;
+}
+body {
+  --background-color: white;
+  --text-color: black;
+  --elements-color: white;
+  margin: 0;
+  font-family: Nunito, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+header{
+  padding: 15px;
+}
+header h2 a{
+    color: inherit;
+    text-decoration-line: none;
+}
+  .country-card img{
+    width :100%;
+   
+  }
+  .card{
+    border-radius :8px;  
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.40);
+    width: 100%;
+    height: auto;
+    /* max-width: 20%; */
+  }
+  .content{
+    margin:20px;
+  }
+  .card{
+    display: inline-block;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 24px;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    background-color: var(--elements-color);
+  }
+  .CardBody{
+    text-decoration:none;
+    color:#000;
+  }
+  .header-container {
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+    padding-inline: 24px;
+    background-color: var(--elements-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.header-content h1 {
+  font-size: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+.title {
+  font-weight: 800;
+}
+  select.filterbyBrand {
+      width: 250px;
+      height: 38px;
+      border: none;
+      box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
+      padding: 5px;
+  }
+  
+  .main{
+    padding: 24px;
+    min-height:90vh;
+  } 
+  main.dark a.CardBody {
+    color: #fff;
+}
+  main,header{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+main.dark, header.dark {
+    --background-color: hsl(207, 26%, 17%); 
+    --text-color: white;
+    --elements-color: hsl(209, 23%, 22%);
+}
+.theme-changer {
+  cursor: pointer;
+}
+  .searchBar{
+    color: var(--text-color);
+    background-color: var(--elements-color);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 350px;
+    padding-left: 24px;
+    overflow: hidden;
+    box-shadow: 0 0 8px #00000026;
+    display: flex;
+    align-items: center;
+  }
+  input{
+    background-color: inherit;
+    width: 90%;
+    color: inherit;
+    border: none;
+    outline: none;
+    padding: 16px;
+  }
+  .search-filter-container{
+    display: flex;
+    justify-content: space-around;
+  }
+  .image-container{
+    height: 160px;
+    overflow: hidden;
+  }
+  .CardBody img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .product-list{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    margin-top: 50px;
+  }
+  @media only screen and (max-width: 600px){
+    .search-filter-container {
+      justify-content: space-around;
+      display: flex ;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 25px;
+  }
+  }
+  @media screen and (min-width:320px) and (max-width:1200px){
+    .product-details-container{
+      padding:25px;
+    }
+  }

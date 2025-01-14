@@ -1,0 +1,33 @@
+.image-shimmer{
+    width: 480px;
+    height: 320px;
+    background-color: #ccc;   
+}
+.shimmer-details{
+    display: flex;
+    justify-content: center;
+    gap:35px;
+}
+.heading-shimmer{
+    height: 43px;
+    width: 656px;
+    background: #ccc;
+}
+.innerText-shimmer{
+    height: 21.6px;
+    width: 323.7px;
+    background: #ccc;
+}
+.ShimmerLeftRightInfo{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;;
+}
+.InnerInfo{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.detailsContainer{
+    padding : 24px;
+}
